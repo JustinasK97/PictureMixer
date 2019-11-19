@@ -1,0 +1,23 @@
+*{
+    text-align: center;
+}
+#Show{
+    display: block;
+    position:relative;
+    left:42.5%;
+}
+button{
+    background-color: darkslateblue;
+    padding: 10px;
+    color: white;
+    margin: 15px;
+    border-radius: 10px;
+}
+img{
+    width: 50%;
+    height: 50%;
+    margin: 15px;
+}
+li{
+    list-style: none;
+}
