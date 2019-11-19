@@ -27,13 +27,13 @@ function displayNone() {
 function mixedPicture() {
 
     const newOne = foto;
-    naujas.sort(function () {
+    newOne.sort(function () {
        return 0.8 - Math.random()
     });
     console.log(newOne);
-    const select = document.querySelector('img');
-    for (const elements of naujas){
-        console.log(elements);
+    const select = document.querySelectorAll('img');
+    for (const elements of newOne) {
         select.src = 'img/' + elements + '.jpg';
+        console.log(elements);
     }
 }
