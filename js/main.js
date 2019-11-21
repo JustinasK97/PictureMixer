@@ -28,12 +28,22 @@ function mixedPicture() {
 
     const newOne = foto;
     newOne.sort(function () {
-       return 0.8 - Math.random()
+       return 0.2 - Math.random()
     });
     console.log(newOne);
+
     const select = document.querySelectorAll('img');
-    for (const elements of newOne) {
-        select.src = 'img/' + elements + '.jpg';
-        console.log(elements);
+    for (let i=0; i<newOne.length; i++) {
+        select[i].src = 'img/' + newOne[i] + '.jpg';
     }
+
+    const changedPicture = "img/changed.png";
+
+    change = document.querySelectorAll("img")
+
+        change.ondblclick = function(r){
+            r.target.src = changedPicture;
+        }
+
+        console.log(change);
 }
